@@ -1,0 +1,138 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #fff;
+  --accent: #2b6ef6;
+}
+body {
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 24px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 18px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+input[type="text"],
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+button.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.articles {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px;
+  border: 1px solid #e3e6ee;
+  background: #fff;
+  border-radius: 6px;
+  min-height: 40px;
+}
+.articles li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.articles li:last-child {
+  border-bottom: none;
+}
+.articles .remove {
+  background: transparent;
+  border: none;
+  color: #c33;
+  cursor: pointer;
+}
+.log-section {
+  margin-top: 18px;
+}
+.log {
+  background: #111;
+  color: #dff;
+  border-radius: 6px;
+  padding: 12px;
+  height: 240px;
+  overflow: auto;
+}
+.loader {
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e3e6ee;
+  margin-bottom: 8px;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 720px;
+  width: 100%;
+}
+.replace-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.replace-row label {
+  flex: 1;
+  background: #f6f8ff;
+  padding: 6px;
+  border-radius: 4px;
+}
+.replace-row input {
+  width: 320px;
+}
+.replace-row .orig-input {
+  flex: 1;
+}
+.replace-row .val-input {
+  width: 320px;
+}
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+a.hidden {
+  display: none;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MashParser</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+  <h1>Парсер Tinko</h1>
+
+      <section class="input-section">
+        <div class="row">
+          <input id="articleInput" placeholder="Введите артикул и нажмите Добавить" />
+          <button id="addBtn">Добавить</button>
+          <button id="clearBtn">Очистить артикулы</button>
+          <button id="editReplacementsBtn">Редактировать замены</button>
+          <button id="historyBtn">История</button>
+        </div>
+
+        <ul id="articlesList" class="articles"></ul>
+
+        <div class="row">
+          <button id="startBtn" class="primary">Спарсить</button>
+        </div>
+      </section>
+
+      <section class="log-section">
+        <h2>Логи</h2>
+        <div id="loader" class="loader hidden">Ожидание...</div>
+        <pre id="logArea" class="log"></pre>
+        <button id="downloadBtn" class="hidden primary">Скачать CSV</button>
+      </section>
+    </div>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Найдены длинные имена атрибутов</h3>
+        <p>Заполните сокращённые варианты (должны быть короче 28 символов)</p>
+        <form id="replaceForm"></form>
+        <div class="modal-actions">
+          <button id="applyReplacementsBtn" class="primary">Парсить снова</button>
+          <button id="closeModalBtn">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="historyModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>История парсинга</h3>
+        <div id="historyList" style="max-height:400px;overflow:auto"></div>
+        <div class="modal-actions">
+          <button id="closeHistoryBtn">Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
