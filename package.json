@@ -14,9 +14,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "gh-pages -d public"
   },
+  "homepage": "https://USERNAME.github.io/mashparser",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
