@@ -17,7 +17,7 @@
     "start": "node server.js",
     "deploy": "gh-pages -d public"
   },
-  "homepage": "https://USERNAME.github.io/mashparser",
+  "homepage": "https://mkprkk.github.io/mashparser",
   "keywords": [],
   "author": "",
   "license": "ISC",
